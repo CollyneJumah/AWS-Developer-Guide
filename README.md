@@ -131,4 +131,10 @@ This process involves "AWS-fying " the problem: i.e Utilizing AWS services basin
 >   - A service that lets you follow code through a distributed system.
 >   - It collects and records trace data to create a service map that can reveals latencies, HTTP statuses and Meta data that can be used for analysis.
 
+
+### Additional Resources:
+- [6 Essential courses for building Modern Applications on AWS
+](https://training.resources.awscloud.com/modern-apps-traincert/infographic-6-essential-courses-for-building-modern-apps?sc_channel=sm&sc_campaign=AWS_Training_and_Certification&sc_publisher=LINKEDIN&sc_geo=GLOBAL&sc_outcome=adoption&trkCampaign=infographic&sc_content=TRAINCERT-300-ModernApps&trk=b2406c6f-24cc-4483-9f88-c586399b6edf&linkId=183783035)
+- [Cloud Developer certification](https://training.resources.awscloud.com/get-certified-developer-associate)
+
 NEXT ⏭️ [Compute in AWS](compute.md) 🖥️
