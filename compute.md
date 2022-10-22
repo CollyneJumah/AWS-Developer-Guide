@@ -30,10 +30,10 @@ EC2 Allows you to deploy virtual servers within your AWS environment
 > Once you've selected AMI from any of the different sources, you MUST select an instance type.
 > It defines the size of instance based on the number of different parameters.  i.e ECU, vCPUS, Physical processor, amount of volume, network level status performance, Instance storage
 
-| Instance Type     |
-| :---              |
-| Micro Instance    |
-| General Purpose   |
+| Instance Type     | Description
+| :---              |:---
+| Micro Instance    | Have a low cost instance option, providing low amount of CPU resources. Suitable for low throughput applications and websites that requires additional compute cycles periodically. Used for low traffic websites/ blogs, small administrative applications, bastian hosts |
+| General Purpose   | Provides a balance of compute, memory and network|
 | Compute Optimized |
 | FPGA Instance     |
 | GPU Instance      |
