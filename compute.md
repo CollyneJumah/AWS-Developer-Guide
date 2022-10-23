@@ -39,3 +39,57 @@ EC2 Allows you to deploy virtual servers within your AWS environment
 | GPU Instance      |
 | Memory Optimized  |
 | Storage Optimized |
+
+## Instance: Purchasing Options
+### 1. On-Demand Instances
+- Can be launched anytime.
+- Can be used for as long as needed.
+- Flat rate determined on the instance type
+- Typically used for short-term uses.
+- Best used for testing and development environment.
+
+### 2. Reserved Instance
+- Purchases for a short period of time for reduced cost.
+  > * Upfront:
+  > Compelete payment for 1 or 3 years timeframe.
+
+  > * Partial Upfront:
+  > Smaller upfront payment for smaller discount.
+
+  > * No Upfront: The smallest discount is applied.
+
+- Best applied for long-term predictable workload.
+
+### 3. Scheduled Instance
+- You pay for reservations on recurring schedule either daily, weekly or monthly.
+- You could set up a scheduled instance to run during that set time frame i.e once a week. 
+- Note that even if you dint use the instance you will still be charged.
+
+### 4. Spot Instances
+- Allows you to pay for unused EC2 compute resources.
+- No guarantees for a fx period of time.
+- Flactuation of price based on supply and demand.
+- Purchase large EC2 instances at a very low price.
+- Useful for processing data that can be sudden;y interrupted
+
+### 5. On-Demand Capacity Reservation
+- Reserve capacity based on different attributes i.e `instance type`, `platform` and `tenancy` within a particular Availability Zone for any period of time. `This ensures that you always have available number of instances required within a specofic AZ immediately`.
+- It could be used inconjuction with your reserved instance discount.
+
+## Tenancy
+This relates to what underlying host your instance will reside on, so essentially the physical server within your AWS Data center.
+
+1. Shared Tenacy
+- EC2 Instance is launched on any available host with the required resources.
+- The same host may be used by multiple customers
+- AWS Security mechanism prevent one EC2 Instance accessing another in the same host.
+2. Dedicated Instance
+- Hosted on hardware that no other customer can access.
+- May be required to meet compliance.
+- Dedicated instance incur additional charges.
+
+3. Dedicated Host
+- Addiditional visibility & control on the physical host.
+- Allow to use the same hosts for a number of instances.
+- May be required to meet the compliance.
+
