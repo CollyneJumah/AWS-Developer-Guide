@@ -135,3 +135,38 @@ Security group of EC2 Instance.
 > Its possible to use same key on multiple instances
 
 > Its your responsiblity to maintain and install the lastest OS and Security patches released by the security vendors as dictated within the [AWS shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/) / or [here](https://cloudacademy.com/blog/aws-shared-responsibility-model-security/)
+
+## Amazon Autoscaling
+> A mechanism that automatically allows you to increase or decrease your EC2 resources to increase demands based off of custom defined metrics and thresholds.
+
+### Autoscaling in AWS
+1. Amazon EC2 Autoscaling
+>Focus on scaling your EC2 fleets.
+2. AWS Autoscaling
+>Allows you to scale:
+- Amazon EC2 task
+- DynamoDB table and index
+- Amazon Aurora replicas.
+
+> Through customizable and defined metrics, you can increase(`scale out`) & decrease (`scale in`) the size of your EC2 fleet automatically with ease.
+
+#### Advantages
+* Automation
+>Your infrastracture can elastically provision the required resources preventing your operation team from manually deploying & removing resources.
+* Greator customer satisfaction
+>If you're always able to provision enough capacity within your environment, then its unlikey your end users will experience performance issue.
+* Cost Reduction
+>With the ability to automatically reduce the amount of resources you have when the demand drops, you will stop paying for those resources.
+
+## Components of EC2 Autoscaling
+> - Create a launch configuration or Launch Template.
+> - Create an Autoscaling Group.
+
+### Launch Template
+>A new and more advanced version of the launch configuration.
+>You can build a standard configuration allowing you to simplify how you launch instances for your auto-scaling group.
+
+### Autoscaling Group
+>The autoscaling group defines:
+- The desired capacity and other limitations of the group using scaling policy.
+- Where the group should scale resources i.e which AZ.
