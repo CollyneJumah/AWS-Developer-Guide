@@ -25,3 +25,22 @@
 ![NAT,IGW](images/vpc/vpc-nat-igw.png)
 
 Private subnet can now access the internet through the NAT Gateway that connects to the Internet Gateway.
+
+## Network ACL & Security Group
+**[Network ACL](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html):** A firewall that controls traffic from and to a subnet. Can have ALLOW & DENY rule.
+- Attached at the subnet level.
+- Rules only include IP Addresses.
+
+## Security Group
+A firewall that controls traffic to & from an ENI or an EC2 Instance.
+- Can only have ALLOW rule.
+- Rules include IP Addresses and other Security Group.
+
+## Security Group VS Network Access Control List(NACL)
+
+| Security Group    | Network Access Control List (NACL)    |
+|:-----------------  |                 :----------          |
+|Operates at Instance level | Operate at Subnet Level       |
+|Support Allow rule only | Support both ALLOW & DENY rule   |
+|Stateful: Return traffic is automatically allowed regardless of any rule. | Stateless: Return traffic MUST be EXPLICITLY allowed by rule.  |
+| 
